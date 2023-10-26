@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Getal Verhogen</title>
+</head>
+<body>
+    <h1>Getal: <span id="getal">0</span></h1>
+    <button id="verhoogButton">klik</button>
+
+    <script>
+        
+        let currentGetal = 0;
+
+        
+        const getalElement = document.getElementById("getal");
+
+        
+        const verhoogButton = document.getElementById("verhoogButton");
+
+        
+        verhoogButton.addEventListener("click", function() 
+        {
+            
+            currentGetal++;
+
+            
+            if (currentGetal === 10) 
+            {
+                currentGetal = 0;
+
+            }
+
+            
+            getalElement.textContent = currentGetal;
+        });
+    </script>
+</body>
+</html>
